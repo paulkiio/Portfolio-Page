@@ -1,28 +1,38 @@
 @import materialize
 
 .body-wrapper
-  margin: 1.5%
+
+//ME CONTAINER
+.me-container
 
 .avatar
   display: flex
+  background-image: url("../assets/me2.jpg")
+  opacity: 0.5
+  height: 450px
+  background-attachment: fixed
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
 
-.avatar-container
+.avatar-content
   margin: auto
-  width: 20%
-  padding-top: 50px
-
-#mypic
-  border-radius: 50%
+  color: white
+  -webkit-animation: fadein 2s
+  -moz-animation: fadein 2s
+  -ms-animation: fadein 2s
+  -o-animation: fadein 2s
+  animation: fadein 2s
 
 //ABOUT SECTION
 .about
   padding-top: 30px
-  background-color: #ccc
+  border-style: dashed
 
 //PROJECTS SECTION
 .projects
-  background-color: #ccc
-  display: inline-flex
+  border-style: dashed
+  display: flex
   justify-content: space-between
 
 .card
