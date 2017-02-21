@@ -1,4 +1,0 @@
-<button type="button"><a href="https://www.freecodecamp.com/paulkiio" target="_blank">FreeCodeCamp</a></button>
-<button type="button"><a href="https://github.com/paulkiio" target="_blank">GitHub</a></button>
-<button type="button"><a href="https://www.linkedin.com/in/paul-wathome-a8592156" target="_blank">Linked-In</a></button>
-<button type="button"><a href="https://twitter.com/pwathome" target="_blank">Twitter</a></button>

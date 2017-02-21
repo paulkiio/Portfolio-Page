@@ -1,14 +1,26 @@
 @import materialize
 
+@import url("https://fonts.googleapis.com/css?family=Barrio")
+
+@import url("https://fonts.googleapis.com/css?family=Cabin+Sketch")
+
 .body-wrapper
+
+.nav-wrapper a
+  color: black
+  font-family: "Cabin Sketch", cursive
+  font-size: 35px
+
+  &:hover
+    background-color: #009688
 
 //ME CONTAINER
 .me-container
+  font-family: "Barrio", cursive
 
 .avatar
   display: flex
   background-image: url("../assets/me2.jpg")
-  opacity: 0.5
   height: 450px
   background-attachment: fixed
   background-position: center
@@ -24,6 +36,12 @@
   padding-top: 30px
   border-style: dashed
 
+.about-content
+  border-style: dashed
+
+.resume-section
+  font-family: "Cabin Sketch", cursive
+
 //PROJECTS SECTION
 .projects
   border-style: dashed
@@ -33,3 +51,8 @@
 .card
   max-width: 30%
   height: 10%
+
+//FOOTER
+.links li
+  display: inline-flex
+  padding: 10px
