@@ -9,10 +9,8 @@
 	<link type="text/css" rel="stylesheet" href="sass/main.min.css" media="screen,projection" />
 	<!-- Font Awesome -->
 	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-
 	<!--Let browser know website is optimized for mobile-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
 </head>
 
 <body>
@@ -45,7 +43,8 @@
 		<div class="about row" id="about">
 			<div class="col s6 about-content center">
 				<p class="center container">
-					<h3>About Me</h3> YOLO ugh pinterest cray slow-carb craft beer. Fingerstache waistcoat mixtape pork belly. VHS poke retro tilde portland intelligentsia, gentrify kombucha deep v af enamel pin XOXO listicle sustainable subway tile. Next level twee YOLO marfa crucifix,
+					<h3>About Me</h3>
+					YOLO ugh pinterest cray slow-carb craft beer. Fingerstache waistcoat mixtape pork belly. VHS poke retro tilde portland intelligentsia, gentrify kombucha deep v af enamel pin XOXO listicle sustainable subway tile. Next level twee YOLO marfa crucifix,
 					food truck chicharrones keytar locavore.
 				</p>
 			</div>
@@ -57,8 +56,8 @@
 		</div>
 
 		<!-- PROJECTS SECTION -->
-		<h3 class="center">Projects</h3>
-		<div class="projects" id="projects">
+		<h3 id="projects" class="center divider">Projects</h3>
+		<div class="projects">
 
 			<div class="row">
 
@@ -81,14 +80,14 @@
 				<div class="col m4">
 					<div class="card">
 						<div class="card-image">
-							<img src="assets/fs.png">
+							<img src="assets/pin.png">
 							<span class="card-title"></span>
 						</div>
 						<div class="card-content center">
 							<p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
 						</div>
 						<div class="card-action center">
-							<a href="#">FoneSwappr</a>
+							<a href="https://github.com/paulkiio/Pin-Board">Pin-Board</a>
 							<a href="#"><i class="material-icons">launch</i></a>
 						</div>
 					</div>
@@ -97,14 +96,14 @@
 				<div class="col m4">
 					<div class="card">
 						<div class="card-image">
-							<img src="assets/fs.png">
+							<img src="assets/electric.png">
 							<span class="card-title"></span>
 						</div>
 						<div class="card-content center">
 							<p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
 						</div>
 						<div class="card-action center">
-							<a href="#">FoneSwappr</a>
+							<a href="https://github.com/electric-vegan-bakeshop/electric">Electric</a>
 							<a href="#"><i class="material-icons">launch</i></a>
 						</div>
 					</div>
@@ -114,19 +113,46 @@
 
 		</div>
 
+		<!-- CONTACT -->
+		<div class="row valign-wrapper">
+			<div id="contact" class="contact-form col s4">
+				<form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+					<div class="row">
+						<label for="name">Your name:</label><br />
+						<input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+					</div>
+					<div class="row">
+						<label for="email">Your email:</label><br />
+						<input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+					</div>
+					<div class="row">
+						<label for="message">Your message:</label><br />
+						<textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+					</div>
+					<input class="btn btn-default" id="submit_button" type="submit" value="Send message" />
+				</form>
+			</div>
+
+			<div class="row col s8 center">
+				<div class="links">
+					<h3>Around The Web</h3>
+					<ul class="row">
+						<li><a href="https://github.com/paulkiio"><i class="fa fa-github-alt fa-4x"></i></a></li>
+						<li><a href="https://www.linkedin.com/in/paulkiio"><i class="fa fa-linkedin fa-4x"></i></a></li>
+						<li><a href="https://www.instagram.com/___kiio"><i class="fa fa-instagram fa-4x"></i></a></li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
 		<!-- FOOTER -->
 		<div class="footer center">
-			<div class="links">
-				<ul class="row">
-					<li><a href="https://github.com/paulkiio"><i class="fa fa-github-alt fa-4x"></i></a></li>
-					<li><a href="https://www.linkedin.com/in/paulkiio"><i class="fa fa-linkedin fa-4x"></i></a></li>
-					<li><a href="https://www.instagram.com/___kiio"><i class="fa fa-instagram fa-4x"></i></a></li>
-				</ul>
-			</div>
+
 
 
 			<p class="copy-right">
-				Designed by &copy; <a href="#">Paul Wathome</a>
+				Designed by &copy; <a href="#">Paul Wathome</a>, built in <a href="http://www.atom.io">Atom</a><br>
+				using <a href="http://materializecss.com/">Materialize</a> framework.
 			</p>
 		</div>
 
