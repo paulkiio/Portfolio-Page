@@ -6,6 +6,9 @@
 
 @import url("https://fonts.googleapis.com/css?family=Permanent+Marker")
 
+body
+  margin: 0.5%
+
 .body-wrapper
   margin: 1%
 
@@ -70,6 +73,11 @@
 
 //MEDIA QUERIES
 
-@media only screen and (max-width: 400px)
-  form
+$breakpoint-phone: 420px
+
+@media (max-width: $breakpoint-phone)
+  #contact
+    display: none
+
+  .resume-section
     display: none
