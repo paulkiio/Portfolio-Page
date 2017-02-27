@@ -3,21 +3,22 @@
 
 <head>
 	<title>Paul Wathome</title>
-	<!--Import Google Icon Font-->
-	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<!--Import materialize.css-->
 	<link type="text/css" rel="stylesheet" href="sass/main.min.css" media="screen,projection" />
 	<!-- Font Awesome -->
 	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 	<!--Let browser know website is optimized for mobile-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="assets/pkw.png" />
 </head>
 
 <body>
+
 	<nav>
 		<div class="nav-wrapper white">
 			<a href="#!" class="brand-logo">Paul Wathome</a>
-			<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+			<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="fa fa-bars"></i></a>
 			<ul id="nav-mobile" class="right hide-on-med-and-down">
 				<li><a href="#about">About</a></li>
 				<li><a href="#projects">Projects</a></li>
@@ -29,7 +30,6 @@
 				<li><a href="#projects">Projects</a></li>
 				<li><a href="#contact">Contact</a></li>
 			</ul>
-
 		</div>
 	</nav>
 
@@ -41,7 +41,7 @@
 			<div class="avatar">
 				<div class="avatar-content center">
 					<h1 class="center">Hi, I'm Paul</h1><br>
-					<h5 class="center">Developer <i class="material-icons">&#xE30A;</i> Photographer <i class="material-icons">camera_alt</i> Traveller <i class="material-icons">&#xE195;</i></h5>
+					<h5 class="center">Developer<i class="fa fa-laptop fa-2x"></i>Photographer<i class="fa fa-camera-retro fa-2x"></i>Traveller<i class="fa fa-plane fa-2x"></i></h5>
 				</div>
 			</div>
 
@@ -58,7 +58,15 @@
 			<div class="col s6 center resume-section">
 				<h5>Paul Wathome</h5>
 				<h6>Web Developer - Photographer - Traveller</h6>
-				<a href="assets/Paul_Wathome_Resume.pdf" class="waves-effect waves-light btn" download>Download Resume</a>
+
+				<button data-target="modal1" class="btn">Preview Resume</button>
+				<div id="modal1" class="modal">
+					<div class="modal-content">
+						<img src="assets/resume.png" alt="">
+					</div>
+				</div>
+
+				<a href="assets/Paul_Wathome_Resume.pdf" class="waves-effect waves-light btn" download><i class="fa fa-download"></i></a>
 			</div>
 		</div>
 
@@ -69,7 +77,7 @@
 			<div class="row">
 
 				<div class="col m4">
-					<div class="card">
+					<div class="card medium">
 						<div class="card-image">
 							<img src="assets/fs.png">
 							<span class="card-title"></span>
@@ -78,14 +86,13 @@
 							<p>Built in Rails, FoneSwappr is a platform where consumer can buy, sell or trade their gently used smartphones.</p>
 						</div>
 						<div class="card-action center">
-							<a href="#">FoneSwappr</a>
-							<a href="#"><i class="material-icons">launch</i></a>
+							<a href="https://github.com/paulkiio/foneswappr">FoneSwappr</a>
 						</div>
 					</div>
 				</div>
 
 				<div class="col m4">
-					<div class="card">
+					<div class="card medium">
 						<div class="card-image">
 							<img src="assets/pin.png">
 							<span class="card-title"></span>
@@ -95,13 +102,12 @@
 						</div>
 						<div class="card-action center">
 							<a href="https://github.com/paulkiio/Pin-Board">Pin-Board</a>
-							<a href="#"><i class="material-icons">launch</i></a>
 						</div>
 					</div>
 				</div>
 
 				<div class="col m4">
-					<div class="card">
+					<div class="card medium">
 						<div class="card-image">
 							<img src="assets/electric.png">
 							<span class="card-title"></span>
@@ -111,7 +117,6 @@
 						</div>
 						<div class="card-action center">
 							<a href="https://github.com/electric-vegan-bakeshop/electric">Electric</a>
-							<a href="#"><i class="material-icons">launch</i></a>
 						</div>
 					</div>
 				</div>
@@ -143,24 +148,33 @@
 						<li><a href="https://www.instagram.com/kiio.me"><i class="fa fa-instagram fa-4x"></i></a></li>
 					</ul>
 				</div>
+
+				<div class="ring">
+					<a href="tel:484-450-6445"><i class="fa fa-phone fa-5x"></i></a>
+				</div>
+
 			</div>
 
 		</div>
 		<!-- FOOTER -->
 		<div class="footer center">
 
-
-
 			<p class="copy-right">
 				Designed by &copy; <a href="#">Paul Wathome</a>, built in <a href="http://www.atom.io">Atom</a><br> using <a href="http://materializecss.com/">Materialize</a> framework.
 			</p>
 		</div>
 
-
-
 	</div>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-	<script type="text/javascript" src="js/materialize.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			// the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+			$('.modal').modal();
+		});
+	</script>
+
+
 </body>
 
 </html>
