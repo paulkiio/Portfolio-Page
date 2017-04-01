@@ -1,6 +1,8 @@
 $(document).ready(function() {
     $('.materialboxed').materialbox();
     $('.modal').modal();
-    // mobile nav
     $(".button-collapse").sideNav();
+
+    var viewHeight = $(window).height();
+    var meContainer = $('.me-container .avatar').css('height', viewHeight);
 });
