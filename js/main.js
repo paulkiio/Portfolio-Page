@@ -5,4 +5,5 @@ $(document).ready(function() {
 
     var viewHeight = $(window).height();
     var meContainer = $('.me-container .avatar').css('height', viewHeight);
+
 });
