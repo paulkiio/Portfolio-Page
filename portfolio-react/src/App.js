@@ -7,8 +7,8 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <div className="App container">
-        <Navbar fluid collapseOnSelect>
+      <div className="App">
+        <Navbar fluid collapseOnSelec>
           <Navbar.Header>
             <Navbar.Brand>
               <Link to="/">Paul Wathome</Link>
