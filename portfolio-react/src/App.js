@@ -1,25 +1,31 @@
 import React, {Component} from 'react';
-import {Link} from 'react-router-dom';
-import {Navbar} from 'react-bootstrap';
+import {withRouter} from 'react-router-dom';
+import {stack as Menu} from 'react-burger-menu';
 import Routes from './Routes';
+import RouteNavItem from './components/RouteNavItem';
 import './App.css';
 
 class App extends Component {
+
+  handleNavLink = (event) => {
+    event.preventDefault();
+    this.props.history.push(event.currentTarget.getAttribute('href'));
+  }
+
   render() {
     return (
       <div className="App">
-        <Navbar fluid collapseOnSelec>
-          <Navbar.Header>
-            <Navbar.Brand>
-              <Link to="/">Paul Wathome</Link>
-            </Navbar.Brand>
-            <Navbar.Toggle/>
-          </Navbar.Header>
-        </Navbar>
+        <Menu>
+          <RouteNavItem onClick={this.handleNavLink} href="/about">About</RouteNavItem>
+          <RouteNavItem onClick={this.handleNavLink} href="/work">Work</RouteNavItem>
+          <RouteNavItem href="https://medium.com/@paulkiio" target="_blank">Blog</RouteNavItem>
+          <RouteNavItem onClick={this.handleNavLink} href="/contact">Contact</RouteNavItem>
+        </Menu>
+        <Menu right/>
         <Routes/>
       </div>
     );
   }
 }
 
-export default App;
+export default withRouter(App);
