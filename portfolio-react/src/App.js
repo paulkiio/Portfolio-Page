@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import {Link, withRouter} from 'react-router-dom';
 import {Navbar, Nav} from 'react-bootstrap';
-import RouteNavItem from './components/RouteNavItem';
 import Routes from './Routes';
+import RouteNavItem from './components/RouteNavItem';
 import './App.css';
 
 class App extends Component {
