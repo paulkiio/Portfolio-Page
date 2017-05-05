@@ -6,8 +6,4 @@ $(document).ready(function() {
 	var viewHeight = $(window).height();
 	var meContainer = $('.me-container .avatar').css('height', viewHeight);
 
-	$("#link2").click(function() {
-		$('.work-image').prepend('<img src="assets/bm.png" />')
-	});
-
 });
