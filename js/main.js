@@ -16,6 +16,6 @@ $(document).ready(function() {
 	weekday[6] = "Saturday";
 
 	var n = weekday[d.getDay()];
+	document.getElementById("day").innerHTML = n;
 
-	// document.write("day").innerHTML = n
 });
