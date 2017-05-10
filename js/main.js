@@ -2,7 +2,7 @@ $(document).ready(function() {
 	$(".button-collapse").sideNav();
 	$('.modal').modal();
 
-	var viewHeight = $(window).height();
+	var viewHeight = window.innerHeight ? window.innerHeight : $(window).height();
 	var meContainer = $('.me-container .avatar').css('height', viewHeight);
 
 	var d = new Date();
@@ -14,7 +14,6 @@ $(document).ready(function() {
 	weekday[4] = "Thursday";
 	weekday[5] = "Friday";
 	weekday[6] = "Saturday";
-
 	var n = weekday[d.getDay()];
 	document.getElementById("day").innerHTML = n;
 

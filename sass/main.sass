@@ -1,5 +1,4 @@
 @import materialize
-@import url("https://fonts.googleapis.com/css?family=Barrio")
 @import url("https://fonts.googleapis.com/css?family=Cabin+Sketch")
 @import url("https://fonts.googleapis.com/css?family=Permanent+Marker")
 @import url("https://fonts.googleapis.com/css?family=Roboto+Mono")
@@ -12,9 +11,12 @@
   &:hover
     background-color: #009688
 
+nav .brand-logo
+  padding-left: 10px
+  
 //ME CONTAINER
 .me-container
-  font-family: "Barrio", cursive
+  font-family: "Cabin Sketch", cursive
 
 .avatar
   display: flex
@@ -94,8 +96,8 @@
 
 //MEDIA QUERIES
 
-$breakpoint-phone: 350px
-@media (min-width: $breakpoint-phone)
+$breakpoint-phone: 370px
+@media (max-width: $breakpoint-phone)
   .nav-wrapper
     font-size: 20px
 
