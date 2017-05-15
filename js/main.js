@@ -4,9 +4,7 @@ $(document).ready(function() {
 	$('.button-collapse').sideNav('destroy');
 	$('.modal').modal();
 
-	var viewHeight = window.innerHeight ?
-		window.innerHeight :
-		$(window).height();
+	var viewHeight = window.innerHeight ? window.innerHeight : $(window).height();
 	var meContainer = $('.me-container .avatar').css('height', viewHeight);
 
 	var d = new Date();
