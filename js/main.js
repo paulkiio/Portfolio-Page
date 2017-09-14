@@ -1,7 +1,4 @@
 $(document).ready(function() {
-	$('.button-collapse').sideNav('show');
-	$('.button-collapse').sideNav('hide');
-	$('.button-collapse').sideNav('destroy');
 	$('.modal').modal();
 
 	var viewHeight = window.innerHeight ? window.innerHeight : $(window).height();
@@ -20,12 +17,12 @@ $(document).ready(function() {
 	document.getElementById("day").innerHTML = n;
 
 	var $root = $('html, body');
-	$('a').click(function() {
+	$('.links').click(function() {
 		$root.animate({
 			scrollTop: $($.attr(this, 'href')).offset().top
 		}, 500);
 		return false;
 	});
 
-
+	$('.button-collapse').sideNav();
 });
